@@ -1,37 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Complex Grid Layout</title>
-  <!-- ✅ Load Tailwind CSS via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="p-4">
-  <header>
-    <h1 class="text-2xl font-bold mb-4">Complex Grid Layout with Nested Grids</h1>
-  </header>
-
-  <main class="grid grid-cols-2 gap-4">
-    <!-- First Nested Grid -->
-    <div class="grid grid-cols-2 p-4 gap-2 bg-blue-200">
-      <div class="bg-blue-400 p-2">Nested 1</div>
-      <div class="bg-blue-500 p-2">Nested 2</div>
-    </div>
-
-    <!-- Second Nested Grid -->
-    <div class="grid grid-cols-2 p-4 gap-2 bg-red-200">
-      <div class="bg-red-400 p-2">Nested 3</div>
-      <div class="bg-red-500 p-2">Nested 4</div>
-    </div>
-
-    <!-- Extra Content -->
-    <div class="bg-green-200 p-4">Content 3</div>
-    <div class="bg-yellow-200 p-4">Content 4</div>
-  </main>
-</body>
-=======
   <head>
     <head>
   <meta charset="utf-8" />
@@ -93,10 +61,29 @@
   <p>Published on 2024-09-11</p>
 </footer>
     </main>
+<section>
+  <form action="#" method="POST" aria-labelledby="form-title" role="form">
+    <h2 id="form-title">Contact Us</h2>
 
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" aria-required="true">
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" aria-required="true">
+    </div>
+
+    <div>
+      <button type="submit" aria-label="Submit the form">Submit</button>
+    </div>
+
+    <div aria-live="polite" role="alert"></div>
+  </form>
+</section>
     <footer>
       <p>&copy; 2025 Bright Asamoah Nyarko. All rights reserved.</p>
     </footer>
   </body>
->>>>>>> 8d050a401a4aeb7a3cd995d6035d640e9ad5f075
 </html>
