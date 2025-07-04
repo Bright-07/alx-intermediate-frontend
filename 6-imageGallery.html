@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="p-4">
+  <!-- Header -->
+  <header class="bg-blue-500 text-white p-4">
+    <h1 class="text-3xl">Responsive Image Gallery</h1>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+    <!-- Flexbox Section -->
+    <section class="lg:col-span-2 flex">
+      <div class="w-1/2 p-4 bg-red-200">Flexbox Item 1</div>
+      <div class="w-1/2 p-4 bg-red-400">Flexbox Item 2</div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="bg-green-200 p-4">Sidebar</aside>
+  </main>
+
+  <!-- 🖼️ Image Gallery Section -->
+  <!-- Responsive Image Gallery -->
+<section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+  <img src="https://picsum.photos/seed/1/600/400" class="w-full h-auto object-cover rounded-lg" />
+  <img src="https://picsum.photos/seed/2/600/400" class="w-full h-auto object-cover rounded-lg" />
+  <img src="https://picsum.photos/seed/3/600/400" class="w-full h-auto object-cover rounded-lg" />
+  <img src="https://picsum.photos/seed/4/600/400" class="w-full h-auto object-cover rounded-lg" />
+  <img src="https://picsum.photos/seed/5/600/400" class="w-full h-auto object-cover rounded-lg" />
+  <img src="https://picsum.photos/seed/6/600/400" class="w-full h-auto object-cover rounded-lg" />
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4 mt-8">
+    <p>&copy; 2024 John Doe's Blog</p>
+  </footer>
+</body>
+</html>
